@@ -1,0 +1,5 @@
+Exclude password file for server and database
+pass
+
+Exclude libraries
+Lib/
