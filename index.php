@@ -5,11 +5,11 @@
   session_start();
   include_once "dbcon.php";
 
-  if(isset($_GET["join"])) {
+  if(!empty($_GET["join"])) {
 
     $_SESSION["room"] = $_GET["join"];
     $_SESSION["ref"] = empty($_GET["ref"])?"url":$_GET["ref"];
-    header("Location: http://vatex.victorvejlgaard.com/editor");
+    header('Location: http://vatex.victorvejlgaard.com/editor');
 
   } else {
 
