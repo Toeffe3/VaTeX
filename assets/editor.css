@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: grid;
+
+  grid-template-areas: "menu menu" "input compiled" "preview compiled";
+  grid-template-rows: 80px auto 1fr;
+  grid-template-columns: auto 1fr;
+
+  font-family: 'Cambria';
+  background-color: #ffffff;
+  background-image: url("bg.svg");
+  background-position: 0 calc(100vh - 200px);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  color: #C23292;
+  font-size: 88px;
+  font-style: italic;
+}
+
+h2 {
+  color: #505050;
+  font-size: 55px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+#menu {
+  grid-area: menu;
+  width: auto;
+}
+
+#input {
+  grid-area: input;
+  width: auto;
+  height: auto;
+}
+
+#preview {
+  grid-area: preview;
+  width: auto;
+  height: auto;
+}
+
+#compiled {
+  grid-area: compiled;
+  text-align: center;
+}
+
+#input textarea {
+  width: 100%;
+  height: 100%;
+}
+
+#preview textarea {
+  width: 100%;
+  height: 100%;
+}
+
+#compiled embed {
+  width: 100%;
+  height: 100%;
+}

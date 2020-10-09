@@ -3,3 +3,7 @@ pass
 
 Exclude libraries
 Lib/
+
+Exclude rooms in roomdata
+roomdata/*
+!roomdata/manage.php
